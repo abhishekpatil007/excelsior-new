@@ -44,89 +44,30 @@ export default function ShippingPolicy() {
           <div className="glass-effect p-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
               <Monitor className="w-6 h-6 text-cyan-400 mr-3" />
-              Digital & Classroom Services
+              Service-Based Educational Program
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Our services are educational programs delivered through our Learning Management System (LMS) and offline classroom sessions in Pune, Maharashtra. Since these are digital and classroom-based services, no physical products are shipped.
+              At Money Craft Trader, we provide training and educational services in stock market learning through both online and offline classes. Since our product is a service-based educational program and not a physical item, there is no physical shipping or delivery involved.
             </p>
           </div>
 
-          {/* What You Receive */}
+          {/* How Access is Delivered */}
           <div className="glass-effect p-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
               <CheckCircle className="w-6 h-6 text-green-400 mr-3" />
-              Upon Successful Enrollment
-            </h2>
-            <p className="text-gray-300 mb-6">
-              Upon successful enrollment and payment, students will receive:
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Key className="w-5 h-5 text-cyan-400 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-white font-semibold mb-1">Login Credentials</h3>
-                  <p className="text-gray-400 text-sm">Access to our Learning Management System (LMS)</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Calendar className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-white font-semibold mb-1">Batch Allocation</h3>
-                  <p className="text-gray-400 text-sm">Details for offline or online sessions</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Monitor className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-white font-semibold mb-1">Digital Access</h3>
-                  <p className="text-gray-400 text-sm">All course materials and resources</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Delivery Information */}
-          <div className="glass-effect p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <MapPin className="w-6 h-6 text-blue-400 mr-3" />
-              Delivery Information
+              How Access is Delivered
             </h2>
             <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">Digital Delivery</h3>
-                <p className="text-gray-300">
-                  All course materials, videos, and resources are delivered digitally through our LMS platform. You can access them immediately after enrollment confirmation.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">Classroom Sessions</h3>
-                <p className="text-gray-300">
-                  Offline sessions are conducted at our Pune center. You'll receive detailed location information and batch timings upon enrollment.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">No Shipping Charges</h3>
-                <p className="text-gray-300">
-                  Since all access is provided digitally or in person, no shipping or delivery charges apply to any of our services.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Service Types */}
-          <div className="glass-effect p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold mb-6">Service Types</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
-                <h3 className="text-lg font-semibold text-cyan-400 mb-2">Online Classes</h3>
-                <p className="text-gray-300 text-sm">
-                  Live interactive sessions conducted via Zoom or similar platforms. Access from anywhere with an internet connection.
+                <h3 className="text-lg font-semibold text-cyan-400 mb-2">Online Students</h3>
+                <p className="text-gray-300">
+                  Once your enrollment and payment are confirmed, login credentials to our LMS portal are provided within 24 hours.
                 </p>
               </div>
               <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                <h3 className="text-lg font-semibold text-green-400 mb-2">Offline Classes</h3>
-                <p className="text-gray-300 text-sm">
-                  In-person sessions at our Pune center. Hands-on learning with direct interaction with mentors.
+                <h3 className="text-lg font-semibold text-green-400 mb-2">Offline Students</h3>
+                <p className="text-gray-300">
+                  After enrollment, you will receive a confirmation message with your batch details, classroom address, and start date.
                 </p>
               </div>
             </div>
@@ -139,12 +80,28 @@ export default function ShippingPolicy() {
               Important Notes
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-              <li>No physical products are shipped or delivered</li>
-              <li>All course materials are digital and accessible 24/7</li>
-              <li>Classroom sessions require physical attendance in Pune</li>
-              <li>Internet connection required for online sessions</li>
-              <li>No shipping delays or delivery issues</li>
+              <li>No shipping charges apply, as we do not dispatch any physical goods.</li>
+              <li>All course materials, recordings, and resources are delivered digitally via our portal.</li>
+              <li>Any study materials provided in offline classes are handed over directly to the student at the training center.</li>
             </ul>
+          </div>
+
+          {/* Contact Information */}
+          <div className="glass-effect p-8 rounded-2xl">
+            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+            <p className="text-gray-300 mb-4">
+              If you have any questions, please contact us at:
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-cyan-400" />
+                <span className="text-gray-300">📧 support@moneycrafttrader.com</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-green-400" />
+                <span className="text-gray-300">📞 +91 7499240812</span>
+              </div>
+            </div>
           </div>
         </motion.div>
 
