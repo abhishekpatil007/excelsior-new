@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Monitor, MapPin, Key, Calendar, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Monitor, MapPin, Key, Calendar, CheckCircle, Mail, Phone } from 'lucide-react';
 
 export default function ShippingPolicy() {
   return (
