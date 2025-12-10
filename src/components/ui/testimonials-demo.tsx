@@ -4,82 +4,106 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "Dear sir, in my trading journey you are the greatest blessings of my life.. Aaj tumchyamulech mi ajun stock market mde tikun aahe.. Thank you so much sir... God bless you🙏😇",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Student Trader",
-    role: "Day Trader",
+    text: "This class exceeded my expectations in every way. The instructor explained concepts clearly, kept the sessions engaging, and encouraged questions, which made learning enjoyable and effective. The materials were well-organized, practical, and easy to apply in real-world trading scenarios.",
+    image: "https://randomuser.me/api/portraits/men/14.jpg",
+    name: "Daksh M Giriya",
+    role: "Student",
   },
   {
-    text: "सर तुम्हाला मनापासून शेअर मार्केटचा गुरु मानल आहे. तुमच शिकवणं अगदी मस्त आहे. खोलतंजौन शिकवता पण एकदम सोप्या पद्धतीने शिकवता.",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    name: "Trading Student",
-    role: "Pune Trader",
+    text: "It's wonderful place to learn basics and advanced level of stock market we are trained for over a month",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    name: "Harshal S",
+    role: "Student",
   },
   {
-    text: "King of Candles, Master of patterns, Ruler of Reversals 🔥 🔥🔥❤️",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
-    name: "Market Learner",
-    role: "Technical Analyst",
+    text: "I recently attended the Free Stock Market Training & Wealth Management sessions by Excelsior, and it was a fantastic experience! The instructors were highly knowledgeable and explained complex concepts in a simple and practical way. The session was an eye-opener for financial planning.",
+    image: "https://randomuser.me/api/portraits/women/13.jpg",
+    name: "Jyoti Kammar",
+    role: "Student",
   },
   {
-    text: "Better than a thousand days of diligent study is one day with a great teacher.❤️🙌😍",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    name: "Blessed Student",
-    role: "Options Trader",
+    text: "I never thought learning stock trading could be this easy! The training is simple yet very effective. The live examples and strategies taught here helped me understand the market better. Highly recommended",
+    image: "https://randomuser.me/api/portraits/men/16.jpg",
+    name: "Manjunath Karlannavar",
+    role: "Student",
   },
   {
-    text: "shubham sir a perfect mentor of share market biggest blessing for me who gave me confidence to dream big and achieve my life goals 😇 we are really lucky to learn from you sir.",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    name: "Shubham Fan",
-    role: "Full-time Trader",
+    text: "Attended 1 full day live training workshop on stock market. Live with Prof. Mallikarjun sajjan sir. It was very informative and gave a clear direction on how to approach the market.",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    name: "Prashant Angadi",
+    role: "Local Guide",
   },
   {
-    text: "Dear Shubham sir, Your ability to explain complex trading concepts in an easy-to-understand manner is remarkable. Students are grasping the material and applying it effectively.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Trading Enthusiast",
-    role: "Investment Advisor",
+    text: "I have completed their Basic to Master course. I felt it was good since I didn't had any idea about share market but from this course I got to learn a lot of new things. Mahesh Memane sir's teaching skills were very good study material available for learning any time.",
+    image: "https://randomuser.me/api/portraits/men/18.jpg",
+    name: "RX Varun Shetty",
+    role: "Student",
   },
   {
-    text: "Jai Mahakal Sir 🙏 tumchya sarkhe guru bhetayla pan nashib lagte. Tumhi nehmi mhanta na everything is destined so u were already part of our destiny ! U r big bull of trading market sir🔥",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Mahakal Devotee",
-    role: "Swing Trader",
+    text: "I have attended one day training of Mr.mallikarjun sir. It was a wonderful experience. Full of positive thoughts & a mission towards financial freedom. Lot of energy & motivational speech encourage me to achieve my financial goals, a never before experience.",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
+    name: "Abhishek Mutnal",
+    role: "Student",
   },
   {
-    text: "M.S Dhoni of Share market ❤️🔥😍",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Dhoni Fan Trader",
-    role: "Cricket Fan Trader",
+    text: "Vishwanath Sir’s way of teaching is truly exceptional! His insights on trading and risk management have helped me improve my strategies. This academy provides the best learning experience for anyone interested in stock market investments",
+    image: "https://randomuser.me/api/portraits/men/20.jpg",
+    name: "Mallikarjun Koralli",
+    role: "Student",
   },
   {
-    text: "सर तुमच्या कडून शेअर मार्केट चे खूप काही शिकायला मिळते..तुमचा confidence, patience, analysis खूप भारी आहे...तुम्ही एवढ्या एखाद्या ट्रेड बद्दल एवढे confident असता की ते बघून आमचा confidence वाढतो.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Confident Trader",
-    role: "Portfolio Manager",
+    text: "Taking this class was a transformative experience for me. Coming in as a beginner, I was initially overwhelmed by the complexity of the stock market, but the course broke everything down in a way that was easy to understand and apply. The practical sessions were the best part.",
+    image: "https://randomuser.me/api/portraits/men/21.jpg",
+    name: "Mahesh Mirje",
+    role: "Student",
   },
   {
-    text: "King of Share Market...!!!",
-    image: "https://randomuser.me/api/portraits/women/10.jpg",
-    name: "Share Market King",
-    role: "Market Enthusiast",
+    text: "I had an incredible experience with the stock market and wealth training program. The sessions were highly informative, breaking down complex financial concepts into simple, actionable strategies. The instructors were knowledgeable, engaging, and patient, making learning both enjoyable and impactful.",
+    image: "https://randomuser.me/api/portraits/women/14.jpg",
+    name: "Nashrat Jahan",
+    role: "Student",
   },
   {
-    text: "Dear Maharashtrian jadugar sir😇, Traiding tumhi tr chup changali shikavta ahet.. it is amazing but important shikanyasarkhi gost ahe tumachyakadun ti mhanje pensions .. thanks for God ki amhala menter mhanun tumhi bhetalat.",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
-    name: "Maharashtrian Trader",
-    role: "Long Term Investor",
+    text: "The best place to learn stock market trading. The trainers make sure everyone understands the concepts, even beginners. The practical approach to teaching really helped me build confidence in trading.",
+    image: "https://randomuser.me/api/portraits/men/22.jpg",
+    name: "Anand Dhanapal",
+    role: "Student",
   },
   {
-    text: "गृहिणी या क्षेत्रात आल्या ते फक्त तुमच्यामुळे.....",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
-    name: "Grateful Housewife",
-    role: "Homemaker Trader",
+    text: "I had an incredible experience with the stock market training and wealth management session offered by Excelsior Bangalore. The trainers were highly knowledgeable and simplified complex concepts, making it easy for beginners like me to understand the market dynamics.",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    name: "Prajwal Hiremath",
+    role: "Student",
+  },
+  {
+    text: "They teach us mainly on low risk and high reward and its really works for many peoples for sure.",
+    image: "https://randomuser.me/api/portraits/men/24.jpg",
+    name: "ANUP G A",
+    role: "Student",
+  },
+  {
+    text: "The training provided by Prof. Mallikarjun sajjan Sir in the Workshop \"Train the Trainer\" was encouraging and energetic to keep me focused minting money and absolute knowledge of stock market to achieve financial freedom.",
+    image: "https://randomuser.me/api/portraits/men/25.jpg",
+    name: "Shankareppa Kittur",
+    role: "Student",
+  },
+  {
+    text: "I had an excellent experience with This institute as it offers a well-structured curriculum that caters to both beginners and advanced learners, covering everything from fundamental and technical analysis to live trading strategies. The mentorship is top-notch.",
+    image: "https://randomuser.me/api/portraits/men/26.jpg",
+    name: "TARUN NAIK",
+    role: "Student",
+  },
+  {
+    text: "Today I attended Honorable sajjan sir live session today on Train the Trainer. It was just amazing. I learnt for about financial planning. Thank you very much sir for your valuable guidance. This going to help lot for my rest of life.",
+    image: "https://randomuser.me/api/portraits/men/27.jpg",
+    name: "Babu Rajput",
+    role: "Student",
   },
 ];
 
-const firstColumn = testimonials.slice(0, 4);
-const secondColumn = testimonials.slice(4, 8);
-const thirdColumn = testimonials.slice(8, 12);
+const firstColumn = testimonials.slice(0, 6);
+const secondColumn = testimonials.slice(6, 11);
+const thirdColumn = testimonials.slice(11, 16);
 
 const Testimonials = () => {
   return (
@@ -130,4 +154,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials; 
+export default Testimonials;
