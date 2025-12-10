@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { motion } from 'framer-motion';
@@ -43,7 +44,7 @@ export default function TermsAndConditions() {
           {/* Introduction */}
           <div className="glass-effect p-8 rounded-2xl">
             <p className="text-gray-300 leading-relaxed mb-4">
-              Welcome to Excelsior ("Company", "we", "us", "our"). These Terms & Conditions ("Terms") govern your access to and use of our services, including our website, courses, content, communication channels (such as WhatsApp, Telegram), and offline/online programs.
+              Welcome to Excelsior (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;). These Terms & Conditions (&quot;Terms&quot;) govern your access to and use of our services, including our website, courses, content, communication channels (such as WhatsApp, Telegram), and offline/online programs.
             </p>
             <p className="text-gray-300 leading-relaxed">
               By accessing or using any part of our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.

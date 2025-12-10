@@ -2,10 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { StockButton } from '@/components/ui/StockButton';
-import { SparklesCore } from '@/components/ui/sparkles';
 import {
     TrendingUp, Users, Shield, Zap, Target, Award,
-    Clock, MapPin, Globe, BookOpen, Heart, Star
+    Globe, Heart, Star
 } from 'lucide-react';
 
 export default function AboutUs() {
@@ -107,7 +106,7 @@ export default function AboutUs() {
                         About <span className="gradient-text">Excelsior</span>
                     </h1>
                     <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-8 px-4 sm:px-0 leading-relaxed">
-                        From humble beginnings to India's leading stock market education platform.
+                        From humble beginnings to India&apos;s leading stock market education platform.
                         We are on a mission to bridge the knowledge gap and empower financial freedom.
                     </p>
                 </motion.div>
@@ -158,7 +157,7 @@ export default function AboutUs() {
                                             <h4 className="text-xl font-bold">Our Vision</h4>
                                         </div>
                                         <p className="text-gray-400">
-                                            To be India's most trusted and comprehensive stock market education platform, known for integrity, innovation, and student success.
+                                            To be India&apos;s most trusted and comprehensive stock market education platform, known for integrity, innovation, and student success.
                                         </p>
                                     </div>
                                 </div>

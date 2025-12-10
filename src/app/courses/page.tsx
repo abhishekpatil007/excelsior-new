@@ -1,9 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import AnimatedButton from '@/components/AnimatedButton';
 import { StockButton } from '@/components/ui/StockButton';
-import { CheckCircle, Crown, Star, Zap, Shield, Clock, Users, Award, BookOpen, Gift, TrendingUp, BarChart2 } from 'lucide-react';
+import { CheckCircle, BookOpen, Gift, TrendingUp } from 'lucide-react';
 
 export default function Courses() {
   const curriculum = [

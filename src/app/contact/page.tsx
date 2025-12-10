@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 import AnimatedButton from '@/components/AnimatedButton';
 
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Building } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle, Building } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -87,7 +88,7 @@ export default function Contact() {
             Get in <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto px-4 sm:px-0">
-            Get in touch with our team across multiple locations. We're here to help you start your trading journey.
+            Get in touch with our team across multiple locations. We&apos;re here to help you start your trading journey.
           </p>
         </motion.div>
 
@@ -109,7 +110,7 @@ export default function Contact() {
               >
                 <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
-                <p className="text-gray-400">We'll get back to you within 24 hours.</p>
+                <p className="text-gray-400">We&apos;ll get back to you within 24 hours.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -230,9 +231,9 @@ export default function Contact() {
                   For immediate assistance, check out our FAQ section or join our community forum.
                 </p>
                 <div className="flex flex-col space-y-2">
-                  <a href="/#faq" className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-2">
+                  <Link href="/#faq" className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-2">
                     <span>→ View FAQ</span>
-                  </a>
+                  </Link>
                   <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-2">
                     <span>→ Join Community</span>
                   </a>

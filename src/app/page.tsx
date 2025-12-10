@@ -4,9 +4,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Ticker from '@/components/Ticker';
 import AnimatedButton from '@/components/AnimatedButton';
-import { GlitchButton } from '@/components/ui/glitch-button';
 import { StockButton } from '@/components/ui/StockButton';
-import { ArrowRight, Play, Star, Users, Award, TrendingUp, Shield, Clock, Zap, BarChart2, PieChart } from 'lucide-react';
+import { ArrowRight, Play, Star, Users, Award, TrendingUp, Shield, BarChart2 } from 'lucide-react';
 import FAQ from '@/components/FAQ';
 
 export default function Home() {
@@ -269,7 +268,7 @@ export default function Home() {
               Start Your <span className="gradient-text">Trading Journey</span> Today
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-400 mb-8">
-              Join thousands of successful traders who've mastered the stock market with our proven curriculum and expert guidance.
+              Join thousands of successful traders who&apos;ve mastered the stock market with our proven curriculum and expert guidance.
             </p>
             <StockButton className="mx-auto" onClick={() => window.location.href = '/courses'}>
               Get Started Now

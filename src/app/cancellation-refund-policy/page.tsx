@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { motion } from 'framer-motion';
@@ -84,6 +85,9 @@ export default function CancellationRefundPolicy() {
             </div>
             <p className="text-gray-300 mt-4">
               We will work with our payment partner to resolve the issue and ensure you receive the appropriate resolution.
+            </p>
+            <p className="text-gray-300 mt-4">
+              We reserve the right to modify this policy at any time. Changes will be effective immediately upon posting to the website. It is the user&apos;s responsibility to review this policy periodically.
             </p>
           </div>
 

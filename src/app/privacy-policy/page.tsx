@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           {/* Introduction */}
           <div className="glass-effect p-8 rounded-2xl">
             <p className="text-gray-300 leading-relaxed mb-4">
-              Welcome to Excelsior ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website, attend our courses (online/offline), or interact with us in any form.
+              Welcome to Excelsior (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website, attend our courses (online/offline), or interact with us in any form.
             </p>
             <p className="text-gray-300 leading-relaxed">
               By accessing or using any of our services, you agree to the terms outlined in this Privacy Policy and our No Refund Policy.
@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
               <li>Course cancellations by the participant</li>
               <li>Change of mind</li>
               <li>Unavailability or scheduling conflicts</li>
-              <li>Technical issues on the user's end</li>
+              <li>Technical issues on the user&apos;s end</li>
               <li>Failure to attend live/offline sessions</li>
             </ul>
             <p className="text-gray-300 mt-4 font-semibold">

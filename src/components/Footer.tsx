@@ -41,7 +41,7 @@ const Footer = () => {
                 { icon: Linkedin, href: '#', label: 'LinkedIn' },
                 { icon: Instagram, href: '#', label: 'Instagram' },
                 { icon: Youtube, href: '#', label: 'YouTube' },
-              ].map((social, index) => (
+              ].map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.href}

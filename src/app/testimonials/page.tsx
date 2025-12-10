@@ -48,7 +48,7 @@ export default function Testimonials() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-16 px-4 sm:px-0"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center p-4 sm:p-6 glass-effect rounded-2xl">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-black" />

@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { motion } from 'framer-motion';
-import { Globe, Star, TrendingUp, DollarSign, Users, Award, Crown, Zap, Target, Brain } from 'lucide-react';
+import { Globe, TrendingUp, Users, Crown, Zap, Target, Brain } from 'lucide-react';
 import AnimatedButton from '@/components/AnimatedButton';
 
 export default function Mentors() {
@@ -383,7 +384,7 @@ export default function Mentors() {
               Learn from the <span className="gradient-text">Visionary Founder</span>
             </h2>
             <p className="text-xl text-gray-400 mb-8">
-              Get exclusive access to Shubham Imde's revolutionary trading tools and strategies
+              Get exclusive access to Shubham Imde&apos;s revolutionary trading tools and strategies
               that have transformed thousands of traders into consistent profit-makers.
             </p>
             <div className="flex justify-center">

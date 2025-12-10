@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, TrendingUp } from 'lucide-react';
-import { GlitchButton } from '@/components/ui/glitch-button';
+import { Menu, X } from 'lucide-react';
 import { StockButton } from '@/components/ui/StockButton';
 
 const Navbar = () => {

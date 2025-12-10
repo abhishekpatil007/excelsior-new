@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { StockButton } from '@/components/ui/StockButton';
-import { SparklesCore } from '@/components/ui/sparkles';
 import {
   TrendingUp, Users, Shield, Zap, BookOpen, Video,
   Download, Smartphone, Lock, MessageSquare, Award,
@@ -39,7 +38,7 @@ export default function WhyUs() {
     },
     {
       title: "Proven Track Record",
-      description: "Our mentors have collectively managed over ₹500 Crores in portfolios with consistent returns. Learn from those who've walked the path.",
+      description: "Our mentors have collectively managed over ₹500 Crores in portfolios with consistent returns. Learn from those who&apos;ve walked the path.",
       icon: Award
     },
     {
@@ -131,7 +130,7 @@ export default function WhyUs() {
                 viewport={{ once: true }}
                 className="glass-effect p-8 rounded-2xl text-center relative overflow-hidden group hover:glow-effect transition-all duration-300"
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w - 16 h - 16 bg - gradient - to - r ${step.color} rounded - 2xl flex items - center justify - center mx - auto mb - 6 transform group - hover: scale - 110 transition - transform duration - 300`}>
                   <step.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{step.title}</h3>
