@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <Link 
+            <Link
               href="/"
               className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
             >
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
               <span>Back to Home</span>
             </Link>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             Privacy Policy & <span className="gradient-text">No Refund Policy</span>
           </h1>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           {/* Introduction */}
           <div className="glass-effect p-8 rounded-2xl">
             <p className="text-gray-300 leading-relaxed mb-4">
-              Welcome to Money Craft Trader ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website, attend our courses (online/offline), or interact with us in any form.
+              Welcome to Excelsior ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website, attend our courses (online/offline), or interact with us in any form.
             </p>
             <p className="text-gray-300 leading-relaxed">
               By accessing or using any of our services, you agree to the terms outlined in this Privacy Policy and our No Refund Policy.
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
               5. No Refund Policy
             </h2>
             <p className="text-gray-300 mb-4 font-semibold">
-              All payments made to Money Craft Trader are non-refundable under any circumstances.
+              All payments made to Excelsior are non-refundable under any circumstances.
             </p>
             <p className="text-gray-300 mb-4">
               This includes, but is not limited to:
@@ -173,11 +173,11 @@ export default function PrivacyPolicy() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <span className="text-gray-300">📧 Email: support@moneycrafttrader.com</span>
+                <span className="text-gray-300">📧 Email: tradexcelsior@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">📞 Phone: +91 98765 43210</span>
+                <span className="text-gray-300">📞 Phone: +91 94818 68529</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-red-400" />
@@ -194,7 +194,7 @@ export default function PrivacyPolicy() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <Link 
+          <Link
             href="/"
             className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
           >

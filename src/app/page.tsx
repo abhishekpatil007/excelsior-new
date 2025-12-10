@@ -6,7 +6,8 @@ import Ticker from '@/components/Ticker';
 import AnimatedButton from '@/components/AnimatedButton';
 import { GlitchButton } from '@/components/ui/glitch-button';
 import { StockButton } from '@/components/ui/StockButton';
-import { ArrowRight, Play, Star, Users, Award, TrendingUp, Shield, Clock, Zap } from 'lucide-react';
+import { ArrowRight, Play, Star, Users, Award, TrendingUp, Shield, Clock, Zap, BarChart2, PieChart } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -21,31 +22,36 @@ export default function Home() {
   const features = [
     {
       icon: TrendingUp,
-      title: "Expert-Led Sessions",
-      description: "Learn from Wall Street professionals with decades of trading experience"
+      title: "Technical Analysis Mastery",
+      description: "Master 50+ candlestick patterns, support & resistance levels, trend analysis, RSI, MACD, Bollinger Bands, and advanced charting techniques."
     },
     {
       icon: Shield,
       title: "Risk Management",
-      description: "Master proven strategies to protect your capital and maximize returns"
-    },
-    {
-      icon: Clock,
-      title: "Flexible Timings",
-      description: "Multiple batch options: Mon-Fri 12-2 PM & 8-10 PM, Sat-Sun 12-4 PM"
+      description: "Learn position sizing, stop-loss strategies, portfolio diversification, and risk-reward ratios to protect and grow your capital systematically."
     },
     {
       icon: Award,
-      title: "Proven Results",
-      description: "Join thousands of successful traders who have transformed their financial future"
+      title: "95%+ Success Rate",
+      description: "Our students achieve consistent profits using our proven systematic approach to trading and investing."
+    },
+    {
+      icon: BarChart2,
+      title: "Fundamental Analysis",
+      description: "Master financial statement analysis, P/E ratios, debt-to-equity, cash flow analysis, sector analysis, and economic indicators."
+    },
+    {
+      icon: Users,
+      title: "Live Trading Sessions",
+      description: "Join daily live trading sessions, learn portfolio construction, asset allocation, rebalancing strategies, and get real-time market insights."
     }
   ];
 
   const stats = [
     { number: "10K+", label: "Students Enrolled" },
-    { number: "95%", label: "Success Rate" },
-    { number: "500+", label: "Live Trading Sessions" },
-    { number: "50+", label: "Expert Mentors" }
+    { number: "95%+", label: "Success Rate" },
+    { number: "50+", label: "Strategies Mastered" },
+    { number: "24/7", label: "Expert Support" }
   ];
 
   return (
@@ -86,7 +92,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <motion.div 
+        <motion.div
           style={{ y, opacity }}
           className="relative z-20 text-center px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto hero-container"
         >
@@ -106,17 +112,16 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight break-words hero-text px-2 sm:px-0"
-            style={{ 
-              wordBreak: 'break-word', 
+            style={{
+              wordBreak: 'break-word',
               overflowWrap: 'break-word',
               maxWidth: 'calc(100vw - 2rem)',
               hyphens: 'auto'
             }}
           >
-            <span className="gradient-text block sm:inline">Master</span>{' '}
-            <span className="block sm:inline">the Art of</span>{' '}
-            <span className="gradient-text block sm:inline">Stock Market</span>{' '}
-            <span className="block sm:inline">Trading</span>
+            <span className="block sm:inline">Master Stock Market</span>{' '}
+            <span className="gradient-text block sm:inline">Trading & Build</span>{' '}
+            <span className="block sm:inline">Your Financial Future</span>
           </motion.h1>
 
           <motion.p
@@ -126,8 +131,7 @@ export default function Home() {
             className="text-sm sm:text-base lg:text-lg text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0"
             style={{ wordBreak: 'break-word', overflowWrap: 'break-word' }}
           >
-            Join thousands of successful traders who have transformed their financial future 
-            with our expert-led courses and proven strategies.
+            Join thousands of successful traders who have transformed their financial lives with our comprehensive trading education. Learn from industry experts, master proven strategies, and build sustainable wealth through intelligent investing.
           </motion.p>
 
           <motion.div
@@ -137,10 +141,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
             <AnimatedButton className="flex items-center space-x-2 w-full sm:w-auto justify-center text-sm sm:text-base lg:text-lg py-3" onClick={() => window.location.href = '/courses'}>
-              <span>Start Learning Today</span>
+              <span>Start Your Trading Journey Today</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </AnimatedButton>
-            
+
             <AnimatedButton className="flex items-center space-x-2 bg-transparent w-full sm:w-auto justify-center text-sm sm:text-base lg:text-lg py-3">
               <Play className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>Watch Preview</span>
@@ -195,33 +199,32 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 hero-text">
-              Why Choose <span className="gradient-text">MoneyCraft</span>
+              Comprehensive <span className="gradient-text">Trading Education</span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto">
-              Our comprehensive approach combines expert knowledge, practical experience, 
-              and cutting-edge strategies to ensure your trading success.
+              Our proven curriculum has helped over 10,000 students achieve financial independence through systematic trading education.
             </p>
           </motion.div>
 
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-6xl">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="glass-effect p-6 lg:p-8 rounded-2xl hover:glow-effect transition-all duration-300"
-              >
-                <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-xl flex items-center justify-center mb-4 lg:mb-6">
-                  <feature.icon className="w-6 h-6 lg:w-8 lg:h-8 text-black" />
-                </div>
-                <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4">{feature.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-sm lg:text-base">{feature.description}</p>
-              </motion.div>
-            ))}
+            <div className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-7xl">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -10 }}
+                  className="glass-effect p-6 lg:p-8 rounded-2xl hover:glow-effect transition-all duration-300 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)]"
+                >
+                  <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-xl flex items-center justify-center mb-4 lg:mb-6">
+                    <feature.icon className="w-6 h-6 lg:w-8 lg:h-8 text-black" />
+                  </div>
+                  <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4">{feature.title}</h3>
+                  <p className="text-gray-400 leading-relaxed text-sm lg:text-base">{feature.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
@@ -250,6 +253,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQ />
+
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -260,10 +266,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 hero-text">
-              Ready to <span className="gradient-text">Transform</span> Your Trading?
+              Start Your <span className="gradient-text">Trading Journey</span> Today
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-400 mb-8">
-              Join our community of successful traders and start your journey to financial freedom today.
+              Join thousands of successful traders who've mastered the stock market with our proven curriculum and expert guidance.
             </p>
             <StockButton className="mx-auto" onClick={() => window.location.href = '/courses'}>
               Get Started Now

@@ -1,560 +1,255 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Target, Zap, Shield, Clock, Users, Award, Star, ArrowRight, Calculator, Search, BarChart3, TrendingDown, AlertTriangle, CheckCircle, Play, Brain, Cpu, Eye, Gauge, TrendingUpIcon, Activity, Crown, Sparkles } from 'lucide-react';
-import AnimatedButton from '@/components/AnimatedButton';
+import { StockButton } from '@/components/ui/StockButton';
+import { SparklesCore } from '@/components/ui/sparkles';
+import {
+  TrendingUp, Users, Shield, Zap, BookOpen, Video,
+  Download, Smartphone, Lock, MessageSquare, Award,
+  BarChart2, Target, Clock, CheckCircle, Play
+} from 'lucide-react';
 
 export default function WhyUs() {
-  const magicalFormulaFeatures = [
-    "Accurate entry points with 99% success rate",
-    "Precise stop-loss levels to minimize risk",
-    "Realistic target predictions for maximum profit",
-    "One-day advance signals for strategic planning",
-    "Risk-reward ratio optimization",
-    "Market condition analysis integration"
+  const methodology = [
+    {
+      title: "Learn Fundamentals",
+      description: "Master the core concepts of stock market trading with comprehensive video lessons and interactive quizzes.",
+      icon: BookOpen,
+      color: "from-cyan-500 to-blue-500"
+    },
+    {
+      title: "Practice & Analyze",
+      description: "Apply your knowledge in simulated trading environments and learn to analyze real market scenarios.",
+      icon: BarChart2,
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Execute with Confidence",
+      description: "Start trading with real money using proven strategies and continuous mentor support.",
+      icon: Target,
+      color: "from-green-500 to-emerald-500"
+    }
   ];
 
-  const scannerFeatures = [
-    "Real-time stock screening across all markets",
-    "Breakout and breakdown pattern recognition",
-    "Volume and momentum analysis",
-    "Technical indicator filtering",
-    "Custom alert system for opportunities",
-    "Historical pattern validation"
+  const features = [
+    {
+      title: "Live Market Analysis",
+      description: "Join daily live sessions where we analyze real market movements, not just theory from textbooks. Watch expert traders make decisions in real-time.",
+      icon: TrendingUp
+    },
+    {
+      title: "Proven Track Record",
+      description: "Our mentors have collectively managed over ₹500 Crores in portfolios with consistent returns. Learn from those who've walked the path.",
+      icon: Award
+    },
+    {
+      title: "Thriving Community",
+      description: "Access to a private community of 5000+ active traders sharing insights and strategies daily. Network with like-minded investors.",
+      icon: Users
+    },
+    {
+      title: "Lifetime Updates",
+      description: "Markets evolve, and so does our curriculum. Get free access to all new content, strategies, and market analysis tools forever.",
+      icon: Clock
+    },
+    {
+      title: "Risk-First Approach",
+      description: "We prioritize capital preservation above all. Learn sophisticated risk management techniques used by institutional traders.",
+      icon: Shield
+    },
+    {
+      title: "Advanced Tools Access",
+      description: "Get exclusive access to proprietary screeners, scanners, and analysis tools worth ₹50,000+ absolutely free with your enrollment.",
+      icon: Zap
+    }
   ];
 
-  const formulaStats = [
-    { number: "99%", label: "Accuracy Rate", icon: Target },
-    { number: "24hrs", label: "Advance Signals", icon: Clock },
-    { number: "1:3", label: "Risk:Reward", icon: TrendingUp },
-    { number: "1000+", label: "Signals Generated", icon: Activity }
+  const lmsFeatures = [
+    { title: "Learn Anytime, Anywhere", icon: Smartphone, description: "Access course library 24/7 on all devices" },
+    { title: "HD Video Lessons", icon: Video, description: "100+ hours of professionally recorded content" },
+    { title: "Live Session Recordings", icon: Play, description: "All sessions recorded for review" },
+    { title: "Downloadable Resources", icon: Download, description: "PDF guides, templates, and cheat sheets" },
+    { title: "Secure & Private", icon: Lock, description: "Enterprise-grade encryption for your data" },
+    { title: "Community Forum", icon: MessageSquare, description: "Connect with fellow traders" }
   ];
 
-  const scannerStats = [
-    { number: "10K+", label: "Stocks Scanned", icon: Search },
-    { number: "92%", label: "Signal Accuracy", icon: Target },
-    { number: "24/7", label: "Real-time Monitoring", icon: Eye },
-    { number: "50+", label: "Pattern Types", icon: Brain }
+  const advantages = [
+    "Practical, real-world trading strategies used by professional traders",
+    "Risk management techniques to protect your capital in volatile markets",
+    "Technical and fundamental analysis taught by industry veterans",
+    "Personal mentorship and 1-on-1 portfolio reviews for premium students",
+    "Access to proprietary trading tools and screeners worth ₹50,000+",
+    "Case studies of actual trades with detailed profit/loss breakdowns",
+    "Psychology of trading - master your emotions for consistent profits",
+    "Tax optimization strategies for traders and investors in India",
+    "Weekly market outlook and sector analysis reports",
+    "Exclusive webinars with successful traders and industry experts",
+    "Priority support via dedicated Telegram and WhatsApp groups",
+    "Certificate of completion recognized by trading institutions"
   ];
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+        {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-20 relative"
         >
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <Crown className="w-8 h-8 text-yellow-400" />
-            <span className="text-yellow-400 font-semibold text-sm uppercase tracking-wider">Exclusive & Proprietary</span>
-            <Crown className="w-8 h-8 text-yellow-400" />
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
           </div>
-          
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Revolutionary <span className="gradient-text">Trading Tools</span>
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Why Choose <span className="gradient-text">Excelsior?</span>
           </h1>
-          
-          <p className="text-xl text-gray-400 max-w-4xl mx-auto mb-6">
-            Discover the <span className="text-yellow-400 font-semibold">ONLY</span> trading tools of their kind in the world. 
-            Our proprietary systems are <span className="text-green-400 font-semibold">exclusive to MoneyCraft</span> and 
-            have transformed thousands of traders into consistent profit-makers.
+          <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-8 px-4 sm:px-0 leading-relaxed">
+            A structured approach that transforms beginners into confident traders.
+            Join thousands who have mastered the markets with our proven methodology.
           </p>
-          
-          <div className="flex items-center justify-center space-x-4 text-sm text-gray-400">
-            <div className="flex items-center space-x-2">
-              <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span>Not available anywhere else</span>
-            </div>
-            <div className="w-px h-4 bg-gray-600"></div>
-            <div className="flex items-center space-x-2">
-              <Shield className="w-4 h-4 text-green-400" />
-              <span>Proprietary technology</span>
+        </motion.div>
+
+        {/* Methodology Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <h2 className="text-3xl font-bold text-center mb-12">Our Proven <span className="gradient-text">Methodology</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {methodology.map((step, index) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="glass-effect p-8 rounded-2xl text-center relative overflow-hidden group hover:glow-effect transition-all duration-300"
+              >
+                <div className={`w-16 h-16 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:scale-110 transition-transform duration-300`}>
+                  <step.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-4">{step.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{step.description}</p>
+
+                {/* Step Number */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-white/5 rounded-full flex items-center justify-center text-6xl font-bold text-white/5">
+                  {index + 1}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* What Sets Us Apart */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <h2 className="text-3xl font-bold text-center mb-12">What Sets Us <span className="gradient-text">Apart</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="glass-effect p-6 rounded-xl hover:bg-white/5 transition-colors duration-300"
+              >
+                <feature.icon className="w-10 h-10 text-cyan-400 mb-4" />
+                <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* The Advantage List */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <div className="glass-effect p-8 md:p-12 rounded-3xl border border-cyan-500/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
+
+            <h2 className="text-3xl font-bold mb-8 text-center md:text-left">The Excelsior <span className="gradient-text">Advantage</span></h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {advantages.map((advantage, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  className="flex items-start space-x-3"
+                >
+                  <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-300">{advantage}</span>
+                </motion.div>
+              ))}
             </div>
           </div>
         </motion.div>
 
-        {/* Main Tools */}
-        <div className="space-y-32">
-          {/* Magical Formula Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            {/* Background Elements */}
-            <div className="absolute inset-0">
-              <div className="absolute top-20 left-10 w-72 h-72 bg-green-500/5 rounded-full blur-3xl animate-float"></div>
-              <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-emerald-500/3 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Content */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
-                    <Brain className="w-6 h-6 text-black" />
-                  </div>
-                  <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">World's First & Only</span>
-                </div>
-                
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                  The <span className="gradient-text">Magical Formula</span>
-                </h2>
-                
-                <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-6">
-                  <p className="text-yellow-400 font-semibold text-sm">
-                    ⚡ EXCLUSIVE: This mathematical formula exists nowhere else in the trading world!
-                  </p>
-                </div>
-                
-                <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                  Our <span className="text-green-400 font-semibold">revolutionary mathematical formula</span> predicts accurate buying levels, stop-loss, and target prices 
-                  <span className="text-green-400 font-semibold"> one day in advance</span> with 99% accuracy. 
-                  <span className="text-yellow-400 font-semibold"> No other course, platform, or tool offers anything remotely similar.</span>
-                </p>
-
-                <div className="space-y-4 mb-8">
-                  {magicalFormulaFeatures.map((feature, index) => (
-                    <motion.div
-                      key={feature}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="flex items-center space-x-3"
-                    >
-                      <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                      <span className="text-gray-300">{feature}</span>
-                    </motion.div>
-                  ))}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <AnimatedButton className="flex items-center space-x-2" onClick={() => window.location.href = '/courses'}>
-                    <span>Learn the Formula</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </AnimatedButton>
-                  <AnimatedButton className="flex items-center space-x-2 bg-transparent">
-                    <Play className="w-4 h-4" />
-                    <span>Watch Demo</span>
-                  </AnimatedButton>
-                </div>
-              </motion.div>
-
-              {/* Enhanced Visual */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <div className="glass-effect p-8 rounded-2xl relative overflow-hidden">
-                  {/* Animated background pattern */}
-                  <div className="absolute inset-0 opacity-5">
-                    <div className="absolute top-0 left-0 w-full h-full">
-                      <svg viewBox="0 0 100 100" className="w-full h-full">
-                        <defs>
-                          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5"/>
-                          </pattern>
-                        </defs>
-                        <rect width="100" height="100" fill="url(#grid)" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div className="relative z-10">
-                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-xl p-6 mb-6 border border-green-500/20">
-                      <div className="text-center mb-6">
-                        <motion.div
-                          animate={{ rotate: 360 }}
-                          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                          className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4"
-                        >
-                          <Calculator className="w-8 h-8 text-black" />
-                        </motion.div>
-                        <h3 className="text-xl font-bold text-green-400 mb-2">Formula Prediction</h3>
-                        <p className="text-gray-400 text-sm">Next Day Signal</p>
-                      </div>
-                      
-                      <div className="space-y-3">
-                        <motion.div 
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.2 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-green-500/20"
-                        >
-                          <span className="text-gray-400">Entry Price</span>
-                          <span className="text-green-400 font-bold">₹1,250</span>
-                        </motion.div>
-                        <motion.div 
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.3 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-red-500/20"
-                        >
-                          <span className="text-gray-400">Stop Loss</span>
-                          <span className="text-red-400 font-bold">₹1,180</span>
-                        </motion.div>
-                        <motion.div 
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.4 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-green-500/20"
-                        >
-                          <span className="text-gray-400">Target</span>
-                          <span className="text-green-400 font-bold">₹1,380</span>
-                        </motion.div>
-                      </div>
-                      
-                      <motion.div 
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
-                        viewport={{ once: true }}
-                        className="mt-4 p-3 bg-green-500/10 rounded-lg text-center border border-green-500/20"
-                      >
-                        <span className="text-green-400 font-semibold">Risk:Reward = 1:2.5</span>
-                      </motion.div>
-                    </div>
-                    
-                    <div className="flex items-center justify-center space-x-2 text-green-400">
-                      <motion.div
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 2, repeat: Infinity }}
-                      >
-                        <Star className="w-4 h-4 fill-current" />
-                      </motion.div>
-                      <span className="text-sm font-medium">99% Success Rate</span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </motion.section>
-
-          {/* Stock Scanner Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            {/* Background Elements */}
-            <div className="absolute inset-0">
-              <div className="absolute top-20 right-10 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl animate-float"></div>
-              <div className="absolute bottom-20 left-10 w-96 h-96 bg-green-500/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/2 right-1/4 w-48 h-48 bg-blue-500/3 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Enhanced Visual */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="relative lg:order-2"
-              >
-                <div className="glass-effect p-8 rounded-2xl relative overflow-hidden">
-                  {/* Animated background pattern */}
-                  <div className="absolute inset-0 opacity-5">
-                    <div className="absolute top-0 left-0 w-full h-full">
-                      <svg viewBox="0 0 100 100" className="w-full h-full">
-                        <defs>
-                          <pattern id="scanner-grid" width="8" height="8" patternUnits="userSpaceOnUse">
-                            <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.3"/>
-                          </pattern>
-                        </defs>
-                        <rect width="100" height="100" fill="url(#scanner-grid)" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div className="relative z-10">
-                    <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-xl p-6 mb-6 border border-cyan-500/20">
-                      <div className="text-center mb-6">
-                        <motion.div
-                          animate={{ scale: [1, 1.1, 1] }}
-                          transition={{ duration: 2, repeat: Infinity }}
-                          className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4"
-                        >
-                          <Cpu className="w-8 h-8 text-black" />
-                        </motion.div>
-                        <h3 className="text-xl font-bold text-cyan-400 mb-2">Stock Scanner</h3>
-                        <p className="text-gray-400 text-sm">Real-time Analysis</p>
-                      </div>
-                      
-                      <div className="space-y-3">
-                        <motion.div 
-                          initial={{ opacity: 0, x: 20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.2 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-cyan-500/20"
-                        >
-                          <span className="text-gray-400">Stocks Scanned</span>
-                          <span className="text-cyan-400 font-bold">10,000+</span>
-                        </motion.div>
-                        <motion.div 
-                          initial={{ opacity: 0, x: 20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.3 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-green-500/20"
-                        >
-                          <span className="text-gray-400">Breakout Signals</span>
-                          <span className="text-green-400 font-bold">15</span>
-                        </motion.div>
-                        <motion.div 
-                          initial={{ opacity: 0, x: 20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: 0.4 }}
-                          viewport={{ once: true }}
-                          className="flex justify-between items-center p-3 bg-black/30 rounded-lg border border-red-500/20"
-                        >
-                          <span className="text-gray-400">Breakdown Signals</span>
-                          <span className="text-red-400 font-bold">8</span>
-                        </motion.div>
-                      </div>
-                      
-                      <motion.div 
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
-                        viewport={{ once: true }}
-                        className="mt-4 p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20"
-                      >
-                        <div className="flex items-center justify-between text-sm mb-2">
-                          <span className="text-cyan-400">Accuracy</span>
-                          <span className="text-cyan-400 font-semibold">92%</span>
-                        </div>
-                        <div className="w-full bg-black/30 rounded-full h-2">
-                          <motion.div 
-                            initial={{ width: 0 }}
-                            whileInView={{ width: '92%' }}
-                            transition={{ duration: 1, delay: 0.6 }}
-                            viewport={{ once: true }}
-                            className="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full"
-                          ></motion.div>
-                        </div>
-                      </motion.div>
-                    </div>
-                    
-                    <div className="flex items-center justify-center space-x-2 text-cyan-400">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-                      >
-                        <Zap className="w-4 h-4" />
-                      </motion.div>
-                      <span className="text-sm font-medium">24/7 Real-time Scanning</span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Content */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="lg:order-1"
-              >
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
-                    <Cpu className="w-6 h-6 text-black" />
-                  </div>
-                  <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Founder-Built Technology</span>
-                </div>
-                
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                  Intelligent <span className="gradient-text">Stock Scanner</span>
-                </h2>
-                
-                <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-6">
-                  <p className="text-yellow-400 font-semibold text-sm">
-                    🚀 UNIQUE: The only scanner that predicts breakouts/breakdowns 24 hours in advance!
-                  </p>
-                </div>
-                
-                <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                  Our <span className="text-cyan-400 font-semibold">founder-built scanner</span> identifies stocks that will 
-                  <span className="text-green-400 font-semibold"> breakout or breakdown</span> 
-                  <span className="text-cyan-400 font-semibold"> one day in advance</span>. 
-                  <span className="text-yellow-400 font-semibold"> This technology is completely proprietary and unavailable anywhere else in the trading world.</span>
-                </p>
-
-                <div className="space-y-4 mb-8">
-                  {scannerFeatures.map((feature, index) => (
-                    <motion.div
-                      key={feature}
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="flex items-center space-x-3"
-                    >
-                      <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                      <span className="text-gray-300">{feature}</span>
-                    </motion.div>
-                  ))}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <AnimatedButton className="flex items-center space-x-2" onClick={() => window.location.href = '/courses'}>
-                    <span>Access Scanner</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </AnimatedButton>
-                  <AnimatedButton className="flex items-center space-x-2 bg-transparent">
-                    <Play className="w-4 h-4" />
-                    <span>See Results</span>
-                  </AnimatedButton>
-                </div>
-              </motion.div>
-            </div>
-          </motion.section>
-        </div>
-
-        {/* Formula Stats */}
-        <motion.section
+        {/* LMS Portal Section */}
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-32"
+          className="mb-20"
         >
-          <div className="glass-effect p-8 rounded-2xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                Formula <span className="gradient-text">Performance</span>
-              </h2>
-              <p className="text-xl text-gray-400">
-                Proven results that speak for themselves
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {formulaStats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-8 h-8 text-black" />
-                  </div>
-                  <div className="text-3xl lg:text-4xl font-bold gradient-text mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-400 font-medium">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
+          <h2 className="text-3xl font-bold text-center mb-12">Premium <span className="gradient-text">LMS Portal</span> Access</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {lmsFeatures.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="glass-effect p-6 rounded-xl text-center hover:glow-effect transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4 text-cyan-400">
+                  <feature.icon className="w-6 h-6" />
+                </div>
+                <h3 className="font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 text-sm">{feature.description}</p>
+              </motion.div>
+            ))}
           </div>
-        </motion.section>
+        </motion.div>
 
-        {/* Scanner Stats */}
-        <motion.section
+        {/* CTA */}
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-16"
+          className="text-center"
         >
-          <div className="glass-effect p-8 rounded-2xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                Scanner <span className="gradient-text">Capabilities</span>
-              </h2>
-              <p className="text-xl text-gray-400">
-                Advanced technology at your fingertips
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {scannerStats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-8 h-8 text-black" />
-                  </div>
-                  <div className="text-3xl lg:text-4xl font-bold gradient-text mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-400 font-medium">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
-
-        {/* CTA Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-32 text-center"
-        >
-          <div className="glass-effect p-12 rounded-2xl">
-            <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-6 mb-8">
-              <h3 className="text-yellow-400 font-bold text-xl mb-2">
-                🎯 EXCLUSIVE ACCESS ONLY HERE
-              </h3>
-              <p className="text-gray-300">
-                These revolutionary tools are <span className="text-yellow-400 font-semibold">NOT available</span> in any other course, 
-                platform, or trading education program. This is your <span className="text-green-400 font-semibold">ONLY chance</span> to access 
-                technology that gives you a 24-hour advantage over the market.
-              </p>
-            </div>
-            
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to <span className="gradient-text">Transform</span> Your Trading?
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-              Join thousands of successful traders who have already discovered the power of our 
-              <span className="text-yellow-400 font-semibold"> exclusive</span> Magical Formula and Intelligent Stock Scanner.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <AnimatedButton className="flex items-center space-x-2" onClick={() => window.location.href = '/courses'}>
-                <span>Get Exclusive Access</span>
-                <ArrowRight className="w-5 h-5" />
-              </AnimatedButton>
-              <AnimatedButton className="flex items-center space-x-2 bg-transparent">
-                <Play className="w-5 h-5" />
-                <span>Watch Success Stories</span>
-              </AnimatedButton>
-            </div>
-          </div>
-        </motion.section>
+          <h2 className="text-3xl font-bold mb-6">Ready to Start Your <span className="gradient-text">Journey?</span></h2>
+          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
+            Join thousands of successful traders who have transformed their financial future with Excelsior.
+          </p>
+          <StockButton className="mx-auto" onClick={() => window.location.href = '/courses'}>
+            Explore Courses
+          </StockButton>
+        </motion.div>
       </div>
     </div>
   );
-} 
+}

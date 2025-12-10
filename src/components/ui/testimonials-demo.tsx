@@ -99,9 +99,9 @@ const Testimonials = () => {
             viewport={{ once: true }}
             className="mb-6"
           >
-            <img 
-              src="/MCTW.png" 
-              alt="MoneyCraft Logo" 
+            <img
+              src="/logo.jpg"
+              alt="Excelsior Logo"
               className="h-16 sm:h-20 w-auto object-contain"
               style={{ filter: 'brightness(1.1)' }}
             />
@@ -115,7 +115,7 @@ const Testimonials = () => {
             Student Success Stories
           </h2>
           <p className="text-center mt-5 opacity-75">
-            See what our successful traders have to say about MoneyCraft.
+            See what our successful traders have to say about Excelsior.
           </p>
         </motion.div>
 

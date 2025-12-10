@@ -16,7 +16,7 @@ export default function TermsAndConditions() {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <Link 
+            <Link
               href="/"
               className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
             >
@@ -24,7 +24,7 @@ export default function TermsAndConditions() {
               <span>Back to Home</span>
             </Link>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             Terms & <span className="gradient-text">Conditions</span>
           </h1>
@@ -43,7 +43,7 @@ export default function TermsAndConditions() {
           {/* Introduction */}
           <div className="glass-effect p-8 rounded-2xl">
             <p className="text-gray-300 leading-relaxed mb-4">
-              Welcome to Money Craft Trader ("Company", "we", "us", "our"). These Terms & Conditions ("Terms") govern your access to and use of our services, including our website, courses, content, communication channels (such as WhatsApp, Telegram), and offline/online programs.
+              Welcome to Excelsior ("Company", "we", "us", "our"). These Terms & Conditions ("Terms") govern your access to and use of our services, including our website, courses, content, communication channels (such as WhatsApp, Telegram), and offline/online programs.
             </p>
             <p className="text-gray-300 leading-relaxed">
               By accessing or using any part of our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
               2. Educational Purpose Only
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-              <li>All content provided by Money Craft Trader is strictly for educational and informational purposes.</li>
+              <li>All content provided by Excelsior is strictly for educational and informational purposes.</li>
               <li>We do not provide financial, investment, or legal advice.</li>
               <li>Users are responsible for their own investment decisions.</li>
             </ul>
@@ -82,7 +82,7 @@ export default function TermsAndConditions() {
               3. Payment Terms
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-              <li>All payments made to Money Craft Trader are final and non-refundable.</li>
+              <li>All payments made to Excelsior are final and non-refundable.</li>
               <li>Your registration is confirmed only upon successful payment.</li>
               <li>We reserve the right to modify course pricing at any time.</li>
             </ul>
@@ -107,7 +107,7 @@ export default function TermsAndConditions() {
               5. Intellectual Property
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-              <li>All materials including but not limited to videos, slides, PDFs, live sessions, and recordings are the intellectual property of Money Craft Trader.</li>
+              <li>All materials including but not limited to videos, slides, PDFs, live sessions, and recordings are the intellectual property of Excelsior.</li>
               <li>You may not record, distribute, duplicate, or share any part of our course content without written permission.</li>
               <li>Any unauthorized sharing or commercial use of our material is a legal violation.</li>
             </ul>
@@ -195,11 +195,11 @@ export default function TermsAndConditions() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <span className="text-gray-300">📧 Email: support@moneycrafttrader.com</span>
+                <span className="text-gray-300">📧 Email: tradexcelsior@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">📞 Phone: +91 74992 40812</span>
+                <span className="text-gray-300">📞 Phone: +91 94818 68529</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-red-400" />
@@ -216,7 +216,7 @@ export default function TermsAndConditions() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <Link 
+          <Link
             href="/"
             className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
           >

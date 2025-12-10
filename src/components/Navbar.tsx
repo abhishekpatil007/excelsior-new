@@ -22,9 +22,10 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Why Us', href: '/why-us' },
-    { name: 'Mentors', href: '/mentors' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Courses', href: '/courses' },
     { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -32,11 +33,10 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-black/80 backdrop-blur-md'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-black/80 backdrop-blur-md'
+        : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -46,9 +46,9 @@ const Navbar = () => {
             className="flex items-center"
           >
             <Link href="/">
-              <img 
-                src="/MCTW.png" 
-                alt="MoneyCraft Logo" 
+              <img
+                src="/logo.jpg"
+                alt="Excelsior Logo"
                 className="h-12 sm:h-16 md:h-20 w-auto object-contain bg-transparent mt-3 sm:mt-4 md:mt-5"
                 style={{ background: 'transparent' }}
               />
@@ -126,8 +126,8 @@ const Navbar = () => {
                 transition={{ delay: navItems.length * 0.1 }}
                 className="pt-4 border-t border-gray-800"
               >
-                <StockButton 
-                  className="w-full justify-center text-lg py-4" 
+                <StockButton
+                  className="w-full justify-center text-lg py-4"
                   onClick={() => {
                     setIsOpen(false);
                     window.location.href = '/courses';

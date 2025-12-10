@@ -16,7 +16,7 @@ export default function ShippingPolicy() {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <Link 
+            <Link
               href="/"
               className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
             >
@@ -24,7 +24,7 @@ export default function ShippingPolicy() {
               <span>Back to Home</span>
             </Link>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             <span className="gradient-text">Shipping</span> Policy
           </h1>
@@ -47,7 +47,7 @@ export default function ShippingPolicy() {
               Service-Based Educational Program
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              At Money Craft Trader, we provide training and educational services in stock market learning through both online and offline classes. Since our product is a service-based educational program and not a physical item, there is no physical shipping or delivery involved.
+              At Excelsior, we provide training and educational services in stock market learning through both online and offline classes. Since our product is a service-based educational program and not a physical item, there is no physical shipping or delivery involved.
             </p>
           </div>
 
@@ -95,11 +95,11 @@ export default function ShippingPolicy() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <span className="text-gray-300">📧 support@moneycrafttrader.com</span>
+                <span className="text-gray-300">📧 tradexcelsior@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">📞 +91 7499240812</span>
+                <span className="text-gray-300">📞 +91 94818 68529</span>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function ShippingPolicy() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <Link 
+          <Link
             href="/"
             className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
           >

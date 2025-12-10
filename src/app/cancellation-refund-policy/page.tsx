@@ -16,7 +16,7 @@ export default function CancellationRefundPolicy() {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <Link 
+            <Link
               href="/"
               className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
             >
@@ -24,7 +24,7 @@ export default function CancellationRefundPolicy() {
               <span>Back to Home</span>
             </Link>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             Cancellation & <span className="gradient-text">Refund Policy</span>
           </h1>
@@ -43,7 +43,7 @@ export default function CancellationRefundPolicy() {
           {/* Introduction */}
           <div className="glass-effect p-8 rounded-2xl">
             <p className="text-gray-300 leading-relaxed">
-              At Money Craft Trader, we provide educational services, including online and offline stock market training programs. Once a student enrolls and makes the payment, the fee is non-refundable and non-transferable under any circumstances.
+              At Excelsior, we provide educational services, including online and offline stock market training programs. Once a student enrolls and makes the payment, the fee is non-refundable and non-transferable under any circumstances.
             </p>
           </div>
 
@@ -75,11 +75,11 @@ export default function CancellationRefundPolicy() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <span className="text-gray-300">📧 Email: support@moneycrafttrader.com</span>
+                <span className="text-gray-300">📧 Email: tradexcelsior@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">📞 Phone: +91 7499240812</span>
+                <span className="text-gray-300">📞 Phone: +91 94818 68529</span>
               </div>
             </div>
             <p className="text-gray-300 mt-4">
@@ -121,7 +121,7 @@ export default function CancellationRefundPolicy() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <Link 
+          <Link
             href="/"
             className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
           >

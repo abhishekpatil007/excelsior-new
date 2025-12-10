@@ -29,7 +29,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
       setProfitToday(prev => +(prev + (Math.random() - 0.5) * 0.1).toFixed(1));
       setSignalAccuracy(prev => Math.max(95, Math.min(100, +(prev + (Math.random() - 0.5) * 0.1).toFixed(1))));
       setTradingVolume(prev => +(prev + (Math.random() - 0.5) * 0.1).toFixed(1));
-      
+
       // Market status simulation
       const hour = new Date().getHours();
       if (hour >= 9 && hour < 16) {
@@ -46,12 +46,12 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
 
   const locationInfo = {
     city: "Pune",
-    state: "Maharashtra", 
+    state: "Maharashtra",
     country: "India",
     coordinates: "18.5204° N, 73.8567° E",
     address: "Pune, Maharashtra, India",
-    phone: "+91 74992 40812",
-    email: "support@moneycrafttrader.com",
+    phone: "+91 94818 68529",
+    email: "tradexcelsior@gmail.com",
     hours: "Mon-Fri: 12-2 PM & 8-10 PM, Sat-Sun: 12-4 PM"
   };
 
@@ -75,11 +75,10 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
               <button
                 key={view}
                 onClick={() => setSelectedView(view)}
-                className={`px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                  selectedView === view
+                className={`px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${selectedView === view
                     ? 'bg-gradient-to-r from-cyan-500 to-green-500 text-white shadow-lg'
                     : 'text-gray-400 hover:text-white'
-                }`}
+                  }`}
               >
                 {view === 'live' && <Activity className="w-4 h-4 inline mr-2" />}
                 {view === 'analytics' && <BarChart3 className="w-4 h-4 inline mr-2" />}
@@ -91,7 +90,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
         </div>
 
         {/* Main Command Interface */}
-        <div 
+        <div
           className="relative aspect-[18/11] bg-gradient-to-br from-slate-950 via-gray-900 to-black rounded-3xl overflow-hidden border border-gray-700/30 shadow-2xl"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -116,14 +115,14 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                       transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
                     />
                   ))}
-                  
+
                   {/* Nodes */}
                   <motion.circle
                     cx={`${node.x}%`}
                     cy={`${node.y}%`}
                     r="3"
                     fill={node.active ? "#10b981" : "#374151"}
-                    animate={{ 
+                    animate={{
                       scale: node.active ? [1, 1.3, 1] : [1],
                       opacity: node.active ? [0.6, 1, 0.6] : [0.3]
                     }}
@@ -131,7 +130,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                   />
                 </g>
               ))}
-              
+
               <defs>
                 <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.4" />
@@ -147,11 +146,11 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
             <div className="flex items-center justify-between">
               {/* Left Status Cluster */}
               <div className="flex items-center space-x-4">
-                <motion.div 
+                <motion.div
                   className="bg-black/90 backdrop-blur-xl border border-green-500/40 rounded-2xl px-4 py-2 flex items-center space-x-2"
                   animate={{ borderColor: marketStatus === 'OPEN' ? '#10b981' : '#ef4444' }}
                 >
-                  <motion.div 
+                  <motion.div
                     className={`w-2 h-2 rounded-full ${marketStatus === 'OPEN' ? 'bg-green-400' : 'bg-red-400'}`}
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
@@ -174,9 +173,9 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
               <div className="text-center">
                 <div className="bg-black/90 backdrop-blur-xl border border-gray-600/30 rounded-2xl px-6 py-3">
                   <div className="text-white text-lg font-mono tracking-wider">
-                    {currentTime.toLocaleTimeString('en-US', { 
-                      hour12: true, 
-                      hour: '2-digit', 
+                    {currentTime.toLocaleTimeString('en-US', {
+                      hour12: true,
+                      hour: '2-digit',
                       minute: '2-digit',
                       second: '2-digit'
                     })}
@@ -210,7 +209,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
               <motion.div
                 key={`radar-${i}`}
                 className="absolute inset-0"
-                style={{ 
+                style={{
                   width: `${80 + i * 40}px`,
                   height: `${80 + i * 40}px`,
                   marginLeft: `${-40 - i * 20}px`,
@@ -231,12 +230,12 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                 }}
               />
             ))}
-            
+
             {/* Core Location Beacon */}
             <motion.div
               className="relative w-20 h-20 bg-gradient-to-br from-white via-gray-100 to-gray-200 rounded-full shadow-2xl flex items-center justify-center border-4 border-white/20"
               whileHover={{ scale: 1.15 }}
-              animate={{ 
+              animate={{
                 y: [0, -5, 0],
                 boxShadow: [
                   "0 0 20px rgba(34, 197, 94, 0.3)",
@@ -244,7 +243,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                   "0 0 20px rgba(34, 197, 94, 0.3)"
                 ]
               }}
-              transition={{ 
+              transition={{
                 y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
                 boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
               }}
@@ -279,7 +278,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
           </div>
 
           {/* Advanced Bottom Command Panel */}
-          <motion.div 
+          <motion.div
             className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-gray-900/95 to-transparent p-8 pt-16"
             initial={{ y: 100 }}
             animate={{ y: 0 }}
@@ -299,7 +298,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                   <p className="text-gray-400 text-sm">{locationInfo.state}, {locationInfo.country} • Trading Hub</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <div className="bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/40 rounded-2xl px-4 py-2 flex items-center space-x-2">
                   <Eye className="w-4 h-4 text-green-400" />
@@ -322,7 +321,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                 <Navigation className="w-5 h-5" />
                 <span>Navigate</span>
               </motion.button>
-              
+
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -331,7 +330,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                 <Phone className="w-5 h-5" />
                 <span>Call</span>
               </motion.button>
-              
+
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -373,7 +372,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                         <span className="text-green-400 text-sm font-bold">ACTIVE</span>
                       </div>
                     </div>
-                    
+
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-gray-800/50 rounded-xl p-3 text-center">
                         <div className="text-green-400 text-xl font-bold">{signalAccuracy}%</div>
@@ -384,7 +383,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
                         <div className="text-gray-400 text-xs">Volume Today</div>
                       </div>
                     </div>
-                    
+
                     <div className="text-gray-300 text-sm space-y-2">
                       <p className="flex items-center">
                         <MapPin className="w-4 h-4 text-cyan-400 mr-2" />
@@ -509,7 +508,7 @@ export const InteractiveMap = ({ className = "" }: InteractiveMapProps) => {
             <span>Real-time updates</span>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="text-center">
             <div className="text-2xl font-bold text-green-400 mb-1">{activeStudents}</div>

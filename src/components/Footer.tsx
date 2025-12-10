@@ -21,20 +21,19 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-4">
               <Link href="/" className="inline-block">
-                <motion.img 
+                <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
-                  src="/MCTW.png" 
-                  alt="MoneyCraft Logo" 
+                  src="/logo.jpg"
+                  alt="Excelsior Logo"
                   className="h-16 sm:h-20 w-auto object-contain cursor-pointer"
                   style={{ filter: 'brightness(1.1)' }}
                 />
               </Link>
             </div>
-            
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Master the art of stock market trading with our expert-led courses. 
-              Transform your financial future with proven strategies and real-world insights.
+
+            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+              Excelsior is a premium stock market training institute dedicated to empowering individuals with the knowledge and skills to achieve financial independence.
             </p>
             <div className="flex space-x-3">
               {[
@@ -68,7 +67,7 @@ const Footer = () => {
               {[
                 { name: 'Home', href: '/' },
                 { name: 'Why Us', href: '/why-us' },
-                { name: 'Mentors', href: '/mentors' },
+                { name: 'About Us', href: '/about-us' },
                 { name: 'Courses', href: '/courses' },
                 { name: 'Testimonials', href: '/testimonials' },
                 { name: 'Contact', href: '/contact' },
@@ -98,18 +97,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start sm:items-center space-x-3">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 mt-0.5 sm:mt-0 flex-shrink-0" />
-                <span className="text-gray-400 text-sm break-all sm:break-normal">support@moneycrafttrader.com</span>
+                <span className="text-gray-400 text-sm break-all sm:break-normal">tradexcelsior@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91 74992 40812</span>
+                <span className="text-gray-400 text-sm">+91 94818 68529</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Pune, Maharashtra, India</span>
+                <span className="text-gray-400 text-sm">Pune, Bengaluru, Chennai, Hubli, Belagavi</span>
               </div>
             </div>
-            
+
             {/* Batch Timings */}
             <div className="mt-6 p-4 bg-gray-800/50 rounded-lg border border-cyan-500/20">
               <h4 className="text-white font-semibold text-sm mb-3 flex items-center">
@@ -131,8 +130,8 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0"
         >
-          <p className="text-gray-400 text-sm text-center sm:text-left">
-            © {currentYear} MoneyCraft. All rights reserved.
+          <p className="text-gray-500 text-sm">
+            &copy; {currentYear} Excelsior. All rights reserved.
           </p>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
             <Link href="/privacy-policy" className="text-gray-400 hover:text-cyan-400 transition-colors text-center sm:text-left">

@@ -8,9 +8,14 @@ import AnimatedBackground from '@/components/AnimatedBackground'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'MoneyCraft - Premium Stock Market Trading Courses',
+  title: 'Excelsior - Premium Stock Market Trading Courses',
   description: 'Master the art of stock market trading with expert-led courses. Transform your financial future with proven strategies and real-world insights.',
   keywords: 'stock market, trading, courses, investment, financial education, trading strategies',
+  icons: {
+    icon: '/logo.jpg',
+    shortcut: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
 }
 
 export default function RootLayout({
