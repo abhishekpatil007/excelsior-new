@@ -14,8 +14,8 @@ const faqs = [
     answer: "All our courses provide lifetime access with no expiration date. Once you enroll, you can access all videos, resources, materials, and updates forever. You'll also receive free updates whenever we add new content, modules, or market analysis to keep the course current with evolving market trends."
   },
   {
-    question: "What is the difference between the course tiers?",
-    answer: "Foundation (₹9,999): Essential concepts for beginners with 20+ video lessons. Professional Trader (₹24,999): Advanced analysis techniques, live trading sessions, and community access. Elite Masterclass (₹49,999): Everything plus 1-on-1 coaching, algorithmic trading, options strategies, and personalized mentorship."
+    question: "What types of courses do you offer?",
+    answer: "We offer a comprehensive 'Basics to Advanced' course designed to take you from a complete beginner to a professional trader. There are no confusing tiers or upgrades – you get access to everything in one complete package."
   },
   {
     question: "Do you teach different trading styles?",
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "Are there live trading sessions?",
-    answer: "Absolutely! Every concept is reinforced with real market examples and live case studies. Our Professional and Elite tiers include daily live trading sessions where you can watch real trades being analyzed and executed in real-time."
+    answer: "Absolutely! Every concept is reinforced with real market examples and live case studies. Our course includes daily live trading sessions where you can watch real trades being analyzed and executed in real-time."
   },
   {
     question: "How much capital do I need to start trading?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "Is there support available if I have questions?",
-    answer: "Yes! All plans include comprehensive support. Foundation students get email support. Professional Trader students receive priority support and weekly Q&A sessions. Elite Masterclass students get 24/7 dedicated support and monthly 1-on-1 coaching sessions."
+    answer: "Yes! We provide comprehensive support to all our students, including email support, weekly Q&A sessions, and access to our trading community."
   },
   {
     question: "Do you provide guidance on trading platforms?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Do you cover options and derivatives?",
-    answer: "Yes! Our Elite Masterclass includes comprehensive coverage of options trading, futures, and other derivatives. We teach options strategies, Greeks, volatility trading, and risk management for derivatives."
+    answer: "Yes! Our comprehensive course includes deep-dive coverage of options trading, futures, and other derivatives. We teach options strategies, Greeks, volatility trading, and risk management for derivatives."
   }
 ];
 

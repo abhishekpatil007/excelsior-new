@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { StockButton } from '@/components/ui/StockButton';
@@ -45,12 +46,14 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center"
           >
-            <Link href="/">
-              <img
+            <Link href="/" className="relative flex items-center">
+              <Image
                 src="/logo.jpg"
                 alt="Excelsior Logo"
-                className="h-12 sm:h-16 md:h-20 w-auto object-contain bg-transparent mt-3 sm:mt-4 md:mt-5"
-                style={{ background: 'transparent' }}
+                width={150}
+                height={60}
+                className="h-12 sm:h-16 md:h-20 w-auto object-contain"
+                priority
               />
             </Link>
           </motion.div>

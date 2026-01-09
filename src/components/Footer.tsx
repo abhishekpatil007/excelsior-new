@@ -116,8 +116,8 @@ const Footer = () => {
                 Class Timings (IST)
               </h4>
               <div className="space-y-1 text-xs text-gray-400">
-                <div>Mon - Fri: 12-2 PM & 8-10 PM</div>
-                <div>Sat - Sun: 12-4 PM</div>
+                <div>Mon - Fri: 10am-12pm, 1pm-3pm, 4pm-6pm</div>
+                <div>Sat - Sun: 10am-12pm, 11am-1pm</div>
               </div>
             </div>
           </motion.div>

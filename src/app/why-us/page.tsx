@@ -38,7 +38,7 @@ export default function WhyUs() {
     },
     {
       title: "Proven Track Record",
-      description: "Our mentors have collectively managed over ₹500 Crores in portfolios with consistent returns. Learn from those who&apos;ve walked the path.",
+      description: "Our mentors have managed over ₹100 Crores in portfolios, delivering consistent returns across market cycles. Learn directly from experts who've walked the path.",
       icon: Award
     },
     {

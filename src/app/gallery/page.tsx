@@ -2,18 +2,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
 
 export default function Gallery() {
     const images = [
         '/gallery/20250908_180954.jpg',
-        '/gallery/20250908_181016.jpg',
-        '/gallery/20250908_183212.jpg',
-        '/gallery/20250908_183259.jpg',
+        '/gallery/20250908_184532.jpg',
         '/gallery/20250908_183304.jpg',
         '/gallery/20250908_184038.jpg',
         '/gallery/20250908_184048.jpg',
-        '/gallery/20250908_184532.jpg',
+        '/gallery/20250908_183212.jpg',
+        '/gallery/gallery_update_1.jpeg',
+        '/gallery/gallery_update_2.jpeg',
     ];
 
     return (
@@ -27,7 +26,6 @@ export default function Gallery() {
                         className="text-center mb-16"
                     >
                         <div className="flex items-center justify-center space-x-2 mb-6">
-                            <Instagram className="w-8 h-8 text-pink-400" />
                             <span className="text-pink-400 font-semibold text-sm uppercase tracking-wider">Our Moments</span>
                         </div>
 
